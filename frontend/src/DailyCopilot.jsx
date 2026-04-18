@@ -105,7 +105,7 @@ export default function DailyCopilot() {
 
   // Check backend health on mount
   useEffect(() => {
-    fetch("http://localhost:8000/")
+    fetch("https://velmora-ai.onrender.com/")
       .then((r) => r.ok ? setServerStatus("ok") : setServerStatus("error"))
       .catch(() => setServerStatus("error"));
   }, []);
